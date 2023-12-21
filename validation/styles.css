@@ -25,3 +25,31 @@ input {
     border: 3px solid #ccc;
     outline: none !important;
 }
+
+input.valid {
+
+    border-color: #36cc36;
+
+}
+
+input.invalid {
+    border-color: orange;
+}
+
+
+input+p {
+    font-family: arial;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: orange;
+    opacity: 0;
+    height: 0;
+}
+
+input.invalid + p {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
